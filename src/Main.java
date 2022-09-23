@@ -1,26 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        int number = -1; //istediğiniz bir numaranın asal mı değil mi olduğunu gösteren bir proje.
-        boolean asalMi = false;
+        int number = -1; //this project shows that a number is prime number or not
+        boolean isPrime = false;
         if (number == 1 || number<0){
-            System.out.println("Asal Değildir!");
+            System.out.println("This is not a Prime Number");
             return;
         }
         if (number == 0){
-            System.out.println("Geçersiz numara");
+            System.out.println("This is not a Prime Number");
             return;
         }
 
         for (int i = 2; i<number;i++){
             if(number%i == 0){
-                asalMi = true;
+                isPrime = true;
             }
         }
-        if (asalMi == true){
-            System.out.println("Asal Değildir!");
+        if (isPrime == true){
+            System.out.println("This is not a Prime Number");
         }
         else{
-            System.out.println("Asaldır!");
+            System.out.println("This is a Prime Number!");
         }
     }
 }
